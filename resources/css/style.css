@@ -1,0 +1,141 @@
+body{
+
+}
+
+p{
+
+}
+
+h1{
+
+}
+
+h2{
+
+}
+
+h3{
+
+}
+
+
+/* HEADER SECTION */
+
+
+header{
+border: 3px solid red;
+display:flex;
+justify-content:space-between;
+height:4rem;
+position:fixed;
+background-color:grey;
+top:0rem;
+width:100%;
+z-index:10;
+}
+
+.logo{
+  display:flex;
+  border:solid 2px green;
+  align-items:center;
+  margin-left:1.5rem;
+}
+
+.logo-image{
+  display:inline-block;
+}
+
+.logo-colmar{
+  display:inline-block;
+}
+
+.logo-academy{
+  display:inline-block;
+}
+
+nav{
+  border:solid 2px yellow;
+  align-items:center;
+  display:flex;
+  margin-right:1.5rem;
+}
+
+nav li{
+  display:inline-block;
+  padding-left:1rem;
+}
+
+
+/* INTRO SECTION */
+
+
+#intro-section{
+border: 4px dotted black;
+display:flex;
+margin-top:4rem;
+}
+
+.intro-img{
+  border:2px solid green;
+  width:60%;
+  height:auto;
+  padding-left:1.5rem;
+  padding-right:2.5rem;
+  padding-top:2rem;
+  padding-bottom:2rem;
+}
+
+.banner-img{
+  width:100%;
+  height:auto;
+}
+
+.intro-info{
+border:2px solid aquamarine;
+display:flex;
+flex-flow:column;
+justify-content: space-around;
+padding:5rem 0rem;
+}
+
+.start-here{
+  display:inline-block;
+  padding-top:0.5rem;
+  padding-bottom:0.5rem;
+  border:1px solid black;
+  width:100%;
+  display:flex;
+  justify-content:center;
+}
+
+
+/* CAPMUS INFO SECTION */
+
+
+#campus-info-section{
+
+}
+
+
+/* LEARNING SECTION */
+
+
+#learning-section{
+
+}
+
+
+/* THESIS EXHIBIT SECTION */
+
+
+#thesis-exhibit-section{
+
+}
+
+
+/* FOOTER SECTION */
+
+
+footer{
+
+}
