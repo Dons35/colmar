@@ -1,45 +1,80 @@
-body{
-
-}
-
 p{
   font-family:helvetica;
-  color: 	hsl(0, 0%, 40%);
   line-height:1.5rem;
+  color:hsl(0, 0%, 40%);
 }
 
 h1{
   font-family:helvetica;
   font-size:1.5rem;
-  color:	hsl(0, 0%, 26%);
   font-weight:600;
+  color:hsl(0, 0%, 26%);
 }
 
 h2{
   font-family:helvetica;
   font-size:2.5rem;
-	color:hsl(0, 0%, 26%);
   font-weight:700;
+	color:hsl(0, 0%, 26%);
 }
 
+.flex{
+  display:flex;
+}
+
+.flex-center{
+  display:flex;
+  justify-content:center;
+}
+
+.flex-column-center{
+  display:flex;
+  flex-flow:column;
+  justify-content:center;
+}
+
+.width34{
+  width:34%;
+}
+
+.width35{
+  width:35%;
+}
+
+.width40{
+  width:40%;
+}
+
+.width60{
+  width:60%;
+}
+
+.width65{
+  width:65%;
+}
+
+.width80{
+  width:80%;
+}
+
+.width100{
+  width:100%;
+}
 
 /* HEADER SECTION */
 
 
 header{
-display:flex;
-justify-content:space-between;
-height:4rem;
-position:fixed;
-background-color:hsl(180, 12%, 95%);
-top:0rem;
-width:100%;
-z-index:10;
-border-bottom:2px solid hsl(150, 2%, 83%);
+  position:fixed;
+  justify-content:space-between;
+  height:4rem;
+  top:0rem;
+  z-index:10;
+  border-bottom:2px solid hsl(150, 2%, 83%);
+  background-color:hsl(180, 12%, 95%);
 }
 
 .logo{
-  display:flex;
   align-items:center;
   margin-left:1.5rem;
 }
@@ -49,28 +84,25 @@ border-bottom:2px solid hsl(150, 2%, 83%);
 }
 
 .logo-colmar{
-  display:inline-block;
-  color:	hsl(0, 0%, 26%);
   font-weight:700;
+  color:hsl(0, 0%, 26%);
 }
 
 .logo-academy{
-  display:inline-block;
-  color: hsl(150, 2%, 60%);
   font-weight:500;
+  color: hsl(150, 2%, 60%);
 }
 
 nav{
   align-items:center;
-  display:flex;
   margin-right:1.5rem;
 }
 
 nav li{
   display:inline-block;
-  padding-left:1rem;
-  color: 	hsl(0, 0%, 26%);
   font-family:helvetica;
+  padding-left:1rem;
+  color:hsl(0, 0%, 26%);
 }
 
 
@@ -78,58 +110,30 @@ nav li{
 
 
 #intro-section{
-  display:flex;
   margin-top:4rem;
   background-color:hsl(150, 2%, 83%);
 }
 
 .intro-spacer{
-  display:flex;
   padding-bottom:2rem;
-  width:100%;
 }
 
-.intro-img{
-  width:60%;
-  height:auto;
-  padding-left:1.5rem;
-  padding-right:2.5rem;
-  padding-top:2rem;
+.intro-img-div{
+  padding:2rem 2.5rem 0rem 1.5rem;
 }
 
-.intro-img1{
-  width:100%;
-  height:auto;
-}
-
-.intro-info{
-  display:flex;
-  flex-flow:column;
-  justify-content: center;
-  width:34%;
-}
-
-.intro-info1{
-  width:80%;
-}
-
-.intro-info1 h1,h2,p{
+.intro-info h1,h2,p{
   padding:2rem 0rem;
 }
 
 .start-here{
-  display:inline-block;
-  padding-top:0.5rem;
-  padding-bottom:0.5rem;
-  width:100%;
-  display:flex;
-  justify-content:center;
-  background-color: 	hsl(0, 0%, 26%);
+  padding:0.5rem 0rem;
   margin-top:2rem;
+  background-color:hsl(0, 0%, 26%);
 }
 
 .start-here p{
-  color:white;
+  color:hsl(180, 12%, 95%);
 }
 
 
@@ -137,49 +141,32 @@ nav li{
 
 
 #campus-info-section{
-display:flex;
-background-color: hsl(180, 12%, 95%);
+  background-color:hsl(180, 12%, 95%);
 }
 
-.campus-info1{
-  width:60%;
+.campus-info-div1{
   padding:2rem 1.5rem;
 }
 
-.campus-info1 h2{
+.campus-info-div1 h2{
   padding-top:2rem;
 }
 
-.campus-info1 p{
+.campus-info-div1 p{
   padding-top:1.5rem;
 }
 
-.campus-info-img1{
-  width:100%;
-  height:auto;
-}
-
-.campus-info2{
-  width:34%;
-  padding-top:1rem;
-  padding-bottom:3rem;
+.campus-info-div2{
+  padding:1rem 0rem 3rem 0rem;
   border-left:2px hsl(150, 2%, 83%) solid;
 }
 
  .campus-info-card{
-   width:100%;
-   display:flex;
-   border-bottom:2px hsl(150, 2%, 83%) solid;
+  border-bottom:2px hsl(150, 2%, 83%) solid;
  }
 
 .campus-info-card-text{
-  flex-flow:column wrap;
-  justify-content:center;
-  align-items:left;
-  padding-bottom:1rem;
-  padding-top:1rem;
-  display:flex;
-  width:65%;
+  padding:1rem 0rem;
 }
 
 .campus-info-card-text a{
@@ -191,7 +178,6 @@ background-color: hsl(180, 12%, 95%);
 }
 
 .campus-info-card-img{
-  width:35%;
   height:100%;
   padding:1rem;
 }
@@ -205,18 +191,12 @@ background-color: hsl(180, 12%, 95%);
 }
 
 .learning-title{
-  display:flex;
-  align-content:center;
-  justify-content: center;
-  padding-top:2rem;
-  padding-bottom:1rem;
+  padding:2rem 0rem 1rem 0rem;
 }
 
 .learning-cards{
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
-padding-bottom:1rem;
+  flex-flow:row wrap;
+  padding-bottom:1rem;
 }
 
 .learning-card{
@@ -225,19 +205,9 @@ padding-bottom:1rem;
   background-color:hsl(180, 100%, 100%);
 }
 
-.learning-card-img{
-  width:100%;
-  height:auto;
-}
-
 .learning-card-text{
-text-align:left;
-display:flex;
-flex-flow:column wrap;
-justify-content: center;
-padding-top:0.5rem;
-padding-left:1rem;
-padding-bottom:1rem;
+  text-align:left;
+  padding:0.5rem 0rem 1rem 1rem;
 }
 
 .learning-card-text h1,p{
@@ -249,67 +219,40 @@ padding-bottom:1rem;
 
 
 #thesis-exhibit-section{
-  background-color: hsl(180, 12%, 95%);
+  background-color:hsl(180, 12%, 95%);
 }
 
 .thesis-title{
-  display:flex;
-  align-content:center;
-  justify-content: center;
   padding:2rem 0rem;
 }
 
-.thesis-exhibit0{
-  display:flex;
+.thesis-exhibit-div1{
+  padding:0rem 1rem 0rem 1.5rem;
 }
 
-.thesis-exhibit1{
-  width:60%;
-  display:flex;
-  flex-flow:column;
-  justify-content: center;
-  padding-left:1.5rem;
-  padding-right:1rem;
-}
-
-.thesis-exhibit1 video{
-  border: 1px solid hsl(150, 2%, 83%);
+.thesis-exhibit-div1 video{
+  border:2px solid hsl(150, 2%, 83%);
 } /* added to try and make the alignment look neater because of white space at top of video*/
 
-.thesis-exhibit1-1{
-  padding-top:1.5rem;
-  padding-bottom:2rem;
+.thesis-exhibit-div1-text{
+  padding:1.5rem 0rem 2rem 0rem;
 }
 
-.thesis-exhibit1-video{
-width:100%;
-}
-
-.thesis-exhibit2{
-  width:40%;
-}
-
-.thesis-exhibit2-card1{
-  display:flex;
-  padding:1rem;
-}
-
-.thesis-exhibit2-card{
-  display:flex;
+.thesis-exhibit-div2-card{
   padding:1rem;
   background-color:hsl(150, 2%, 83%);
 }
 
-.thesis-exhibit2-img{
-width:35%;
-height:100%;
+.thesis-exhibit-div2-card1{
+  padding:1rem;
 }
 
-.thesis-exhibit2-text{
-display:flex;
-flex-flow: column;
-justify-content: center;
-padding-left:1rem;
+.thesis-exhibit-div2-img{
+  height:100%;
+}
+
+.thesis-exhibit-div2-text{
+  padding-left:1rem;
 }
 
 
@@ -317,17 +260,13 @@ padding-left:1rem;
 
 
 footer{
-display:flex;
-justify-content: space-between;
-padding-left:1.5rem;
-padding-right:1.5rem;
-padding-top:1rem;
-padding-bottom:4rem;
-border-top:2px solid lightgrey;
+  justify-content:space-between;
+  padding:1rem 1.5rem 4rem 1.5rem;
+  border-top:2px solid lightgrey;
+  background-color:hsl(180, 10%, 99%)
 }
 
 .footerlinks{
-  display:flex;
   font-family:helvetica;
 }
 
