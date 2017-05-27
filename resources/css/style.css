@@ -1,18 +1,24 @@
+body,html{
+  margin:0;
+  padding:0;
+}
+
+body{
+  font-family:helvetica, sans-serif;
+}
+
 p{
-  font-family:helvetica;
   line-height:1.5rem;
   color:hsl(0, 0%, 40%);
 }
 
 h1{
-  font-family:helvetica;
   font-size:1.5rem;
   font-weight:600;
   color:hsl(0, 0%, 26%);
 }
 
 h2{
-  font-family:helvetica;
   font-size:2.5rem;
   font-weight:700;
 	color:hsl(0, 0%, 26%);
@@ -90,7 +96,7 @@ header{
 
 .logo-academy{
   font-weight:500;
-  color: hsl(150, 2%, 60%);
+  color:hsl(150, 2%, 60%);
 }
 
 nav{
@@ -103,6 +109,18 @@ nav li{
   font-family:helvetica;
   padding-left:1rem;
   color:hsl(0, 0%, 26%);
+}
+
+nav li a:link{
+  color:hsl(150, 2%, 60%);
+}
+
+nav li a:visited{
+  color:hsl(150, 2%, 50%);
+}
+
+nav li a:active{
+  color:hsl(150, 2%, 40%)
 }
 
 
@@ -127,13 +145,36 @@ nav li{
 }
 
 .start-here{
-  padding:0.5rem 0rem;
   margin-top:2rem;
   background-color:hsl(0, 0%, 26%);
 }
 
-.start-here p{
+.start-here a{
   color:hsl(180, 12%, 95%);
+  text-decoration:none;
+  padding:1rem 0rem; /*wireframe says 8px but shows 16px for this, and 16 px looks better so I chose that one */
+}
+
+.start-here a:link{
+  color:hsl(180, 12%, 95%);
+  box-shadow:0rem 0rem;
+  transition:box-shadow 0.5s ease-out;
+}
+
+.start-here a:visited{
+  color:hsl(180, 12%, 95%);
+  box-shadow:0rem 0rem;
+  transition:box-shadow 0.5s ease-out;
+}
+
+.start-here a:hover{
+  box-shadow:0.4rem 0.4rem 0.05rem hsl(180, 8%, 65%);
+  transition:box-shadow 0.5s ease-out;
+}
+
+.start-here a:active{
+  box-shadow:0.4rem 0.4rem 0.05rem hsl(180, 8%, 65%);
+  color:hsl(150, 2%, 60%);
 }
 
 
@@ -171,6 +212,31 @@ nav li{
 
 .campus-info-card-text a{
   font-family:helvetica;
+  color:hsl(180, 12%, 95%);
+  background-color:hsl(0, 0%, 26%);
+  text-decoration:none;
+}
+
+.campus-info-card-text a:link{
+  color:hsl(180, 12%, 95%);
+  box-shadow:0rem 0rem;
+  transition:box-shadow 0.5s ease-out;
+}
+
+.campus-info-card-text a:visited{
+  color:hsl(180, 12%, 95%);
+  box-shadow:0rem 0rem;
+  transition:box-shadow 0.5s ease-out;
+}
+
+.campus-info-card-text a:hover{
+  box-shadow:0.4rem 0.4rem 0.05rem hsl(180, 8%, 65%);
+  transition:box-shadow 0.5s ease-out;
+}
+
+.campus-info-card-text a:active{
+  box-shadow:0.4rem 0.4rem 0.05rem hsl(180, 8%, 65%);
+  color:hsl(150, 2%, 60%);
 }
 
 .campus-info-card-text h1,p,a{
@@ -272,4 +338,16 @@ footer{
 
 .footerlinks li{
   padding-left:1rem;
+}
+
+footer li a:link{
+  color:hsl(150, 2%, 60%);
+}
+
+footer li a:visited{
+  color:hsl(150, 2%, 50%);
+}
+
+footer li a:active{
+  color:hsl(150, 2%, 40%)
 }
