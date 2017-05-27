@@ -23,7 +23,6 @@ h3{
 
 
 header{
-border: 3px solid red;
 display:flex;
 justify-content:space-between;
 height:4rem;
@@ -36,7 +35,6 @@ z-index:10;
 
 .logo{
   display:flex;
-  border:solid 2px green;
   align-items:center;
   margin-left:1.5rem;
 }
@@ -54,7 +52,6 @@ z-index:10;
 }
 
 nav{
-  border:solid 2px yellow;
   align-items:center;
   display:flex;
   margin-right:1.5rem;
@@ -70,14 +67,12 @@ nav li{
 
 
 #intro-section{
-  border: 4px dotted black;
   display:flex;
   margin-top:4rem;
   background-color:lightgray;
 }
 
 .intro-img{
-  border:2px solid green;
   width:60%;
   height:auto;
   padding-left:1.5rem;
@@ -92,21 +87,30 @@ nav li{
 }
 
 .intro-info{
-  border:2px solid aquamarine;
   display:flex;
   flex-flow:column;
-  justify-content: space-around;
+  justify-content: center;
   padding:10rem 0rem;
+  width:34%;
+}
+
+.intro-info1{
+  width:80%;
+}
+
+.intro-info1 h1,h2,p{
+  padding:2rem 0rem;
 }
 
 .start-here{
   display:inline-block;
   padding-top:0.5rem;
   padding-bottom:0.5rem;
-  border:1px solid black;
   width:100%;
   display:flex;
   justify-content:center;
+  background-color: darkgrey;
+  margin-top:1rem;
 }
 
 
@@ -114,12 +118,10 @@ nav li{
 
 
 #campus-info-section{
-border:4px dotted pink;
 display:flex;
 }
 
 .campus-info1{
-  border:4px dotted purple;
   width:60%;
   padding:2rem 1.5rem;
 }
@@ -132,42 +134,42 @@ display:flex;
   padding-top:1.5rem;
 }
 
+.campus-info-img1{
+  width:100%;
+  height:auto;
+}
+
 .campus-info2{
-  border:2px green solid;
   display:flex;
   flex-flow:column wrap;
   justify-content:space-around;
-  width:26.4375rem;
+  width:34%;
   padding-top:1rem;
   padding-bottom:3rem;
 }
 
-.campus-info2 div{
-display:flex;
-border:1px solid black;
-}
+ .campus-info-card{
+   width:100%;
+   display:flex;
+ }
 
-.campus-info3{
+.campus-info-card-text{
   flex-flow:column wrap;
   justify-content:center;
   align-items:left;
   padding-bottom:1rem;
   padding-top:1rem;
   display:flex;
+  width:65%;
 }
 
-.campus-info3 h1,p,a{
+.campus-info-card-text h1,p,a{
   padding:0.5rem 0rem;
 }
 
-.campus-info-img1{
-  width:100%;
-  height:auto;
-}
-
-.campus-info-img2{
+.campus-info-card-img{
   width:35%;
-  height:35%;
+  height:100%;
   padding:1rem;
 }
 
@@ -185,11 +187,9 @@ border:1px solid black;
   justify-content: center;
   padding-top:2rem;
   padding-bottom:1rem;
-  border:2px pink dotted;
 }
 
 .learning-cards{
-border:3px solid red;
 display:flex;
 flex-wrap:wrap;
 justify-content:center;
@@ -198,7 +198,6 @@ padding-bottom:1rem;
 
 .learning-card{
   width:25%;
-  border:4px solid black;
   margin:1rem;
   background-color:grey;
 }
@@ -206,7 +205,6 @@ padding-bottom:1rem;
 .learning-card-img{
   width:100%;
   height:auto;
-  border:2px solid yellow;
 }
 
 .learning-card-text{
@@ -214,7 +212,6 @@ text-align:left;
 display:flex;
 flex-flow:column wrap;
 justify-content: center;
-border:5px dotted red;
 padding-top:0.5rem;
 padding-left:1rem;
 padding-bottom:1rem;
@@ -229,7 +226,6 @@ padding-bottom:1rem;
 
 
 #thesis-exhibit-section{
-
 }
 
 .thesis-title{
@@ -237,11 +233,24 @@ padding-bottom:1rem;
   align-content:center;
   justify-content: center;
   padding:2rem 0rem;
-  border:2px pink dotted;
+}
+
+.thesis-exhibit0{
+  display:flex;
 }
 
 .thesis-exhibit1{
   width:60%;
+  display:flex;
+  flex-flow:column;
+  justify-content: center;
+  padding-left:1.5rem;
+  padding-right:1rem;
+}
+
+.thesis-exhibit1-1{
+  padding-top:1.5rem;
+  padding-bottom:2rem;
 }
 
 .thesis-exhibit1-video{
@@ -249,7 +258,27 @@ width:100%;
 }
 
 .thesis-exhibit2{
+  width:40%;
+  display:flex;
+  flex-flow: column;
+  justify-content: center;
+}
 
+.thesis-exhibit2-card{
+  display:flex;
+  padding:1rem;
+}
+
+.thesis-exhibit2-img{
+width:35%;
+height:100%;
+}
+
+.thesis-exhibit2-text{
+display:flex;
+flex-flow: column;
+justify-content: center;
+padding-left:1rem;
 }
 
 
