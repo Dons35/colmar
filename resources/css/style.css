@@ -286,5 +286,19 @@ padding-left:1rem;
 
 
 footer{
+display:flex;
+justify-content: space-between;
+padding-left:1.5rem;
+padding-right:1.5rem;
+padding-top:1rem;
+padding-bottom:4rem;
+border-top:2px solid lightgrey;
+}
 
+.footerlinks{
+  display:flex;
+}
+
+.footerlinks li{
+  padding-left:1rem;
 }
