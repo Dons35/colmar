@@ -3,19 +3,23 @@ body{
 }
 
 p{
-
+  font-family:helvetica;
+  color: 	hsl(0, 0%, 40%);
+  line-height:1.5rem;
 }
 
 h1{
-
+  font-family:helvetica;
+  font-size:1.5rem;
+  color:	hsl(0, 0%, 26%);
+  font-weight:600;
 }
 
 h2{
-
-}
-
-h3{
-
+  font-family:helvetica;
+  font-size:2.5rem;
+	color:hsl(0, 0%, 26%);
+  font-weight:700;
 }
 
 
@@ -27,7 +31,7 @@ display:flex;
 justify-content:space-between;
 height:4rem;
 position:fixed;
-background-color:grey;
+background-color:hsl(180, 12%, 95%);
 top:0rem;
 width:100%;
 z-index:10;
@@ -40,15 +44,19 @@ z-index:10;
 }
 
 .logo-image{
-  display:inline-block;
+  height:3rem;
 }
 
 .logo-colmar{
   display:inline-block;
+  color:	hsl(0, 0%, 26%);
+  font-weight:700;
 }
 
 .logo-academy{
   display:inline-block;
+  color: hsl(150, 2%, 60%);
+  font-weight:500;
 }
 
 nav{
@@ -60,6 +68,8 @@ nav{
 nav li{
   display:inline-block;
   padding-left:1rem;
+  color: 	hsl(0, 0%, 26%);
+  font-family:helvetica;
 }
 
 
@@ -69,7 +79,12 @@ nav li{
 #intro-section{
   display:flex;
   margin-top:4rem;
-  background-color:lightgray;
+  background-color:hsl(150, 2%, 83%);
+}
+
+.intro-spacer{
+  display:flex;
+  padding-bottom:2rem;
 }
 
 .intro-img{
@@ -78,7 +93,6 @@ nav li{
   padding-left:1.5rem;
   padding-right:2.5rem;
   padding-top:2rem;
-  padding-bottom:2rem;
 }
 
 .intro-img1{
@@ -90,7 +104,6 @@ nav li{
   display:flex;
   flex-flow:column;
   justify-content: center;
-  padding:10rem 0rem;
   width:34%;
 }
 
@@ -109,8 +122,12 @@ nav li{
   width:100%;
   display:flex;
   justify-content:center;
-  background-color: darkgrey;
-  margin-top:1rem;
+  background-color: 	hsl(0, 0%, 26%);
+  margin-top:2rem;
+}
+
+.start-here p{
+  color:white;
 }
 
 
@@ -119,6 +136,7 @@ nav li{
 
 #campus-info-section{
 display:flex;
+background-color: hsl(180, 12%, 95%);
 }
 
 .campus-info1{
@@ -140,17 +158,16 @@ display:flex;
 }
 
 .campus-info2{
-  display:flex;
-  flex-flow:column wrap;
-  justify-content:space-around;
   width:34%;
   padding-top:1rem;
   padding-bottom:3rem;
+  border-left:2px hsl(150, 2%, 83%) solid;
 }
 
  .campus-info-card{
    width:100%;
    display:flex;
+   border-bottom:2px hsl(150, 2%, 83%) solid;
  }
 
 .campus-info-card-text{
@@ -161,6 +178,10 @@ display:flex;
   padding-top:1rem;
   display:flex;
   width:65%;
+}
+
+.campus-info-card-text a{
+  font-family:helvetica;
 }
 
 .campus-info-card-text h1,p,a{
@@ -178,7 +199,7 @@ display:flex;
 
 
 #learning-section{
-  background-color:lightgray;
+  background-color:hsl(150, 2%, 83%);
 }
 
 .learning-title{
@@ -199,7 +220,7 @@ padding-bottom:1rem;
 .learning-card{
   width:25%;
   margin:1rem;
-  background-color:grey;
+  background-color:hsl(180, 100%, 100%);
 }
 
 .learning-card-img{
@@ -226,6 +247,7 @@ padding-bottom:1rem;
 
 
 #thesis-exhibit-section{
+  background-color: hsl(180, 12%, 95%);
 }
 
 .thesis-title{
@@ -248,6 +270,10 @@ padding-bottom:1rem;
   padding-right:1rem;
 }
 
+.thesis-exhibit1 video{
+  border: 1px solid hsl(150, 2%, 83%);
+} /* added to try and make the alignment look neater because of white space at top of video*/
+
 .thesis-exhibit1-1{
   padding-top:1.5rem;
   padding-bottom:2rem;
@@ -259,14 +285,17 @@ width:100%;
 
 .thesis-exhibit2{
   width:40%;
+}
+
+.thesis-exhibit2-card1{
   display:flex;
-  flex-flow: column;
-  justify-content: center;
+  padding:1rem;
 }
 
 .thesis-exhibit2-card{
   display:flex;
   padding:1rem;
+  background-color:hsl(150, 2%, 83%);
 }
 
 .thesis-exhibit2-img{
@@ -297,6 +326,7 @@ border-top:2px solid lightgrey;
 
 .footerlinks{
   display:flex;
+  font-family:helvetica;
 }
 
 .footerlinks li{
