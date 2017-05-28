@@ -7,9 +7,11 @@
     <link href="resources/css/style.css" type="text/css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
     <link href="resources/font-awesome-4.7.0/css/font-awesome.css" type="text/css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="resources/images/favicon-16x16.png"> <!-- good enough -->
   </head>
   <body>
 
+    <!-- HEADER SECTION -->
 
     <header class="width100 flex">
       <div class="logo flex desktop-header">
@@ -18,23 +20,48 @@
         <h1 class="logo-academy">ACADEMY</h1>
       </div>
       <nav class="mobile-header">
-        <ul>
-          <li><a href=""><img src="resources/images/ic-logo.svg" alt="colmar academy logo" class="mobile-header-icon"></a></li>
-          <li><a href=""><img src="resources/images/ic-on-campus.svg" alt="picnic table icon" class="mobile-header-icon"></a></li>
-          <li><a href=""><img src="resources/images/ic-online.svg" alt="computer monitor icon" class="mobile-header-icon"></a></li>
-          <li><a href=""><img src="resources/images/ic-login.svg" alt="human head icon" class="mobile-header-icon"></a></li>
+        <ul role="presentation">
+          <li>
+            <a href="#intro-section" alt="colmar academy logo - link to top of page">
+              <img src="resources/images/ic-logo.svg" class="mobile-header-icon">
+            </a>
+          </li>
+          <li>
+            <a href="other-pages/on-campus.html" alt="picnic table icon - link to on campus">
+              <img src="resources/images/ic-on-campus.svg" class="mobile-header-icon">
+            </a>
+          </li>
+          <li>
+            <a href="other-pages/online.html" alt="computer monitor icon - link to online">
+              <img src="resources/images/ic-online.svg" class="mobile-header-icon">
+            </a>
+          </li>
+          <li>
+            <a href="other-pages/sign-in.html" alt="human head icon - link to sign in">
+              <img src="resources/images/ic-login.svg" class="mobile-header-icon">
+            </a>
+          </li>
         </ul>
       </nav>
       <nav class="flex desktop-header">
         <ul role="presentation">
-          <li><a href="">On campus</a></li>
-          <li><a href="">Online</a></li>
-          <li><a href="">Our companies</a></li>
-          <li><a href="">Sign in</a></li>
+          <li>
+            <a href="other-pages/on-campus.html" alt="link to on campus">On campus</a>
+          </li>
+          <li>
+            <a href="other-pages/online.html" alt="link to online">Online</a>
+          </li>
+          <li>
+            <a href="other-pages/our-companies.html" alt="link to our companies">Our companies</a>
+          </li>
+          <li>
+            <a href="other-pages/sign-in.html" alt="link to sign in">Sign in</a>
+          </li>
         </ul>
       </nav>
     </header>
 
+    <!-- INTRO SECTION -->
 
     <div id="intro-section">
       <div class="width100 intro-spacer flex">
@@ -43,25 +70,30 @@
         </div>
         <div class="width34 flex-column-center intro-info">
           <div class="width80 mobile-spacer">
-            <h2><i class="fa fa-cogs"></i>  Learn something new every day</h2>
+            <h2>
+              <i class="fa fa-cogs" alt="cogs icon" alt="three small cogs icon"></i>  Learn something new every day
+            </h2>
             <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
             <div class="width100 start-here">
-              <a href="" class="width100 flex-center">Start here</a>
+              <a href="other-pages/start-here.html" class="width100 flex-center" alt="link to start here page">Start here</a>
             </div>
           </div>
         </div>
       </div>
     </div>
 
+    <!-- CAMPUS-INFO SECTION -->
 
     <div id="campus-info-section" class="flex">
       <div class="width60 campus-info-div1">
         <img src="resources/images/information-main.jpg" alt="student reading a book outside" class="width100">
-        <h2><i class="fa fa-heart"></i>  It doesn't hurt to keep practicing</h2>
+        <h2>
+          <i class="fa fa-heart" alt="heart icon" alt="cartoon heart icon"></i>  It doesn't hurt to keep practicing
+        </h2>
         <p>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam at commodo lectus,
         nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget
         magna laoreet, efficitur dolor consequat, tristique ligula."</p>
-        <p>Emanuel, Sr Strategist at Hiring.com</p>
+        <p aria-label="quoted person">Emanuel, Sr Strategist at Hiring.com</p>
       </div>
       <div class="width34 campus-info-div2">
         <div class="width100 campus-info-card flex">
@@ -70,7 +102,7 @@
           <div class="width65 campus-info-card-text flex-column-center">
             <h1>Orientation date</h1>
             <p>Tue 10/11 & Wed 10/12:8am-3pm</p>
-            <a href="" class="flex-center">Read more</a>
+            <a href="other-pages/orientation-date.html" class="flex-center" alt="link to orientation date page">Read more</a>
           </div>
         </div>
         <div class="width100 campus-info-card flex">
@@ -79,7 +111,7 @@
           <div class="width65 campus-info-card-text flex-column-center">
             <h1>Our campus</h1>
             <p>Find which campus is close by you</p>
-            <a href="" class="flex-center">Read more</a>
+            <a href="other-pages/our-campus.html" class="flex-center" alt="link to our campus page">Read more</a>
           </div>
         </div>
         <div class="width100 campus-info-card flex">
@@ -88,22 +120,29 @@
           <div class="width65 campus-info-card-text flex-column-center">
             <h1>Our guest lecture</h1>
             <p>Join a keynote with Oliver Sack about music in medical treatment</p>
-            <a href="" class="flex-center">Read more</a>
+            <a href="other-pages/our-guest-lecture.html" class="flex-center" alt="link to our guest lecture page">Read more</a>
           </div>
         </div>
       </div>
     </div>
 
+    <!-- LEARNING SECTION -->
 
     <div id="learning-section">
       <div class="learning-title flex-center">
-        <h2><i class="fa fa-book"></i>  Start learning</h2>
+        <h2>
+          <i class="fa fa-book" alt="closed book icon"></i>  Start learning
+        </h2>
       </div>
       <div class="learning-cards flex-center">
         <div class="learning-card">
           <img src="resources/images/course-software.jpg" alt="two computer monitors on a dimly lit desk" class="width100">
           <div class="learning-card-text flex-column-center">
-            <h1><span class="learning-mobile-icon"><i class="fa fa-lightbulb-o"></i></span>  Software engineering</h1>
+            <h1>
+              <span class="learning-mobile-icon">
+                <i class="fa fa-lightbulb-o" alt="lightbulb icon"></i>
+              </span>  Software engineering
+            </h1>
             <p>COURSES</p>
             <p>Web Development, Mobile Development, iOT, API's</p>
           </div>
@@ -111,7 +150,11 @@
         <div class="learning-card">
           <img src="resources/images/course-computer-art.jpg" alt="student holding iPhone" class="width100">
           <div class="learning-card-text flex-column-center">
-            <h1><span class="learning-mobile-icon"><i class="fa fa-image"></i></span>  Computer art</h1>
+            <h1>
+              <span class="learning-mobile-icon">
+                <i class="fa fa-image" alt="painting icon"></i>
+              </span>  Computer art
+            </h1>
             <p>COURSES</p>
             <p>Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</p>
           </div>
@@ -119,7 +162,11 @@
         <div class="learning-card">
           <img src="resources/images/course-design.jpg" alt="student shooting camera from hip" class="width100">
           <div class="learning-card-text flex-column-center">
-            <h1><span class="learning-mobile-icon"><i class="fa fa-eye"></i></span>  Design</h1>
+            <h1>
+              <span class="learning-mobile-icon">
+                <i class="fa fa-eye" alt="single eyeball icon"></i>
+              </span>  Design
+            </h1>
             <p>COURSES</p>
             <p>User Experience Design, User Research, Visual Design</p>
           </div>
@@ -127,7 +174,11 @@
         <div class="learning-card">
           <img src="resources/images/course-data.jpg" alt="laptop on reflective table" class="width100">
           <div class="learning-card-text flex-column-center">
-            <h1><span class="learning-mobile-icon"><i class="fa fa-barcode"></i></span>  Data</h1>
+            <h1>
+              <span class="learning-mobile-icon">
+                <i class="fa fa-barcode" alt="barcode icon"></i>
+              </span>  Data
+            </h1>
             <p>COURSES</p>
             <p>Data Science, Big Data, SQL, Data Visualization</p>
           </div>
@@ -135,7 +186,11 @@
         <div class="learning-card">
           <img src="resources/images/course-business.jpg" alt="an unplayed chessboard" class="width100">
           <div class="learning-card-text flex-column-center">
-            <h1><span class="learning-mobile-icon"><i class="fa fa-desktop"></i></span>  Business</h1>
+            <h1>
+              <span class="learning-mobile-icon">
+                <i class="fa fa-desktop" alt="computer monitor icon"></i>
+              </span>  Business
+            </h1>
             <p>COURSES</p>
             <p>Product Development, Business Development, Startup</p>
           </div>
@@ -143,7 +198,11 @@
         <div class="learning-card">
           <img src="resources/images/course-marketing.jpg" alt="close-up of a smart watch" class="width100">
           <div class="learning-card-text flex-column-center">
-            <h1><span class="learning-mobile-icon"><i class="fa fa-comments-o"></i></span>  Marketing</h1>
+            <h1>
+              <span class="learning-mobile-icon">
+                <i class="fa fa-comments-o" alt="two speech bubbles icon"></i>
+              </span>  Marketing
+            </h1>
             <p>COURSES</p>
             <p>Analytics, Content Marketing, Mobile Marketing</p>
           </div>
@@ -151,10 +210,11 @@
       </div>
     </div>
 
+    <!-- THESIS-EXHIBIT SECTION -->
 
     <div id="thesis-exhibit-section">
       <div class="thesis-title flex-center">
-        <h2><i class="fa fa-arrow-up"></i>  Thesis exhibit</h2>
+        <h2><i class="fa fa-arrow-up" alt="arrow pointing upwards icon"></i>  Thesis exhibit</h2>
       </div>
       <div class="flex thesis-mobile-spacer">
         <div class="width60 thesis-exhibit-div1 flex-column-center">
@@ -187,6 +247,7 @@
       </div>
     </div>
 
+    <!-- FOOTER SECTION -->
 
     <footer class="flex">
       <div>
@@ -194,11 +255,12 @@
       </div>
       <div>
         <ul role="presentation" class="flex">
-          <li><a href="">Terms</a></li>
-          <li><a href="">Privacy</a></li>
+          <li><a href="other-pages/terms.html" alt="link to terms page">Terms</a></li>
+          <li><a href="other-pages/privacy.html" alt="link to privacy page">Privacy</a></li>
         </ul>
       </div>
     </footer>
+
 
 
   </body>
