@@ -10,12 +10,20 @@
 
 
     <header class="width100 flex">
-      <div class="logo flex">
+      <div class="logo flex desktop-header">
         <img src="resources/images/ic-logo.svg" alt="colmar academy logo" class="logo-image">
         <h1 class="logo-colmar">COLMAR</h1>
         <h1 class="logo-academy">ACADEMY</h1>
       </div>
-      <nav class="flex">
+      <nav class="mobile-header">
+        <ul>
+          <li><a href=""><img src="resources/images/ic-logo.svg" alt="colmar academy logo" class="mobile-header-icon"></a></li>
+          <li><a href=""><img src="resources/images/ic-on-campus.svg" alt="picnic table icon" class="mobile-header-icon"></a></li>
+          <li><a href=""><img src="resources/images/ic-online.svg" alt="computer monitor icon" class="mobile-header-icon"></a></li>
+          <li><a href=""><img src="resources/images/ic-login.svg" alt="human head icon" class="mobile-header-icon"></a></li>
+        </ul>
+      </nav>
+      <nav class="flex desktop-header">
         <ul role="presentation">
           <li><a href="">On campus</a></li>
           <li><a href="">Online</a></li>
@@ -31,8 +39,8 @@
         <div class="width60 intro-img-div">
           <img src="resources/images/banner.jpg" alt="students studying at a picnic table" class="width100">
         </div>
-        <div class="width34 flex-column-center">
-          <div class="width80">
+        <div class="width34 flex-column-center intro-info">
+          <div class="width80 mobile-spacer">
             <h2>Learn something new every day</h2>
             <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
             <div class="width100 start-here">
@@ -56,6 +64,7 @@
       <div class="width34 campus-info-div2">
         <div class="width100 campus-info-card flex">
           <img src="resources/images/information-orientation.jpg" alt="top-down-view of students on a stone path" class="width35 campus-info-card-img">
+          <img src="resources/images/information-orientation-mobile.jpg" alt="top-down-view of students on a stone path" class="campus-info-card-mobile-img">
           <div class="width65 campus-info-card-text flex-column-center">
             <h1>Orientation date</h1>
             <p>Tue 10/11 & Wed 10/12:8am-3pm</p>
@@ -64,6 +73,7 @@
         </div>
         <div class="width100 campus-info-card flex">
           <img src="resources/images/information-campus.jpg" alt="students studying by framed picture of South America" class="width35 campus-info-card-img">
+          <img src="resources/images/information-campus-mobile.jpg" alt="students studying by framed picture of South America" class="campus-info-card-mobile-img">
           <div class="width65 campus-info-card-text flex-column-center">
             <h1>Our campus</h1>
             <p>Find which campus is close by you</p>
@@ -72,6 +82,7 @@
         </div>
         <div class="width100 campus-info-card flex">
           <img src="resources/images/information-guest-lecture.jpg" alt="guest speaker Oliver Sack" class="width35 campus-info-card-img">
+          <img src="resources/images/information-guest-lecture-mobile.jpg" alt="guest speaker Oliver Sack" class="campus-info-card-mobile-img">
           <div class="width65 campus-info-card-text flex-column-center">
             <h1>Our guest lecture</h1>
             <p>Join a keynote with Oliver Sack about music in medical treatment</p>

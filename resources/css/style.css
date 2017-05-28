@@ -1,8 +1,11 @@
 body,html{
-  margin:0;
-  padding:0;
   font-family:helvetica, sans-serif;
   font-size:16px;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
 }
 
 p{
@@ -78,6 +81,10 @@ header{
   background-color:hsl(180, 12%, 95%);
 }
 
+.mobile-header{
+  display:none;
+}
+
 .logo{
   align-items:center;
   margin-left:1.5rem;
@@ -121,6 +128,29 @@ nav li a:active{
   color:hsl(150, 2%, 40%)
 }
 
+@media only screen and (max-width:745px){
+
+  .desktop-header{
+  display:none;
+  }
+
+  .mobile-header{
+  display:flex;
+  width:calc(100%);
+  }
+
+  .mobile-header ul{
+  display:flex;
+  justify-content:space-around;
+  width:100%;
+  }
+
+  .mobile-header-icon{
+  height:3rem;
+  }
+
+}
+
 
 /* INTRO SECTION */
 
@@ -136,14 +166,20 @@ nav li a:active{
 
 .intro-img-div{
   padding:2rem 2.5rem 0rem 1.5rem;
+
 }
 
-.intro-info h1,h2,p{
-  padding:2rem 0rem;
+.intro-info h2{
+  padding:2rem 0rem 2rem 1rem;
+}
+
+.intro-info h1{
+  padding:0rem 0rem 1.5rem 1rem;
 }
 
 .start-here{
-  margin-top:2rem;
+  margin-bottom:2rem;
+  margin-left:1rem;
   background-color:hsl(0, 0%, 26%);
 }
 
@@ -175,8 +211,41 @@ nav li a:active{
   color:hsl(150, 2%, 60%);
 }
 
+@media only screen and (max-width:745px){
 
-/* CAPMUS INFO SECTION */
+#intro-section .intro-spacer{
+  display:flex;
+  justify-content: center;
+}
+
+#intro-section .intro-img-div{
+  display:none;
+}
+
+.intro-info{
+width:calc(100% - 2rem);
+}
+
+.intro-info .mobile-spacer{
+  width:100%;
+}
+
+.intro-info h2{
+  padding:2rem 0rem 2rem 0rem;
+}
+
+.intro-info h1{
+  padding:0rem 0rem 1.5rem 0rem;
+}
+
+.start-here{
+  margin-left:0rem;
+}
+
+}
+
+
+/* CAMPUS INFO SECTION */
 
 
 #campus-info-section{
@@ -246,6 +315,54 @@ nav li a:active{
   padding:1rem;
 }
 
+.campus-info-card-mobile-img{
+  display:none;
+}
+
+@media only screen and (max-width:745px){
+
+  .campus-info-div1{
+  display:none;
+  }
+
+  .campus-info-div2{
+  width:100%;
+  padding-top:0rem;
+  }
+
+  .campus-info-card{
+  display:flex;
+  flex-flow:column;
+  justify-content: center;
+  border-bottom:none;
+  }
+
+  .campus-info-card-img{
+  display:none;
+  }
+
+  .campus-info-card-mobile-img{
+  display:inline-block;
+  margin:1rem;
+  width:calc(100% - 2rem);
+  }
+
+  .campus-info-card-text{
+  width:100%;
+  padding:0rem 2rem;
+  }
+
+  .campus-info-card-text p{
+  display:block;
+  margin-bottom:0.5rem;
+  }
+
+  .campus-info-card-text a{
+  width:calc(100% - 4rem);
+  }
+
+}
+
 
 /* LEARNING SECTION */
 
@@ -276,6 +393,41 @@ nav li a:active{
 
 .learning-card-text h1,p{
   padding:0.5rem 0rem;
+}
+
+@media only screen and (max-width:745px){
+
+  #learning-section{
+  border:2px solid hsl(150, 2%, 83%);
+  background-color:hsl(180, 12%, 95%);
+  }
+
+  .learning-title{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom:1rem;
+  }
+
+  .learning-cards{
+  display:flex;
+  flex-flow:column;
+  justify-content: center;
+  width:100%;
+  padding-top:0rem;
+  }
+
+  .learning-card{
+  width:calc(100% - 2rem);
+  display:flex;
+  margin-top:0rem;
+  background-color:hsl(150, 2%, 83%);
+  }
+
+  .learning-card img,p{
+  display:none;
+  }
+
 }
 
 
@@ -319,6 +471,10 @@ nav li a:active{
   padding-left:1rem;
 }
 
+@media only screen and (max-width:745px){
+
+}
+
 
 /* FOOTER SECTION */
 
@@ -344,4 +500,8 @@ footer li a:visited{
 
 footer li a:active{
   color:hsl(150, 2%, 40%)
+}
+
+@media only screen and (max-width:745px){
+
 }
