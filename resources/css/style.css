@@ -473,6 +473,29 @@ width:calc(100% - 2rem);
 
 @media only screen and (max-width:745px){
 
+.thesis-exhibit-div1-text,
+.thesis-exhibit-div2-card,
+.thesis-exhibit-div2-card1,
+.thesis-exhibit-div2-img,
+.thesis-exhibit-div2-text{
+  display:none;
+}
+
+.thesis-mobile-spacer{
+  display:block;
+}
+
+.thesis-exhibit-div1{
+  padding:0rem;
+  width:100%;
+  border:0rem;
+  background-color:hsl(180, 10%, 99%);
+}
+
+.thesis-exhibit-div1 video{
+  border-top:2px solid hsl(150, 2%, 83%);
+  margin-bottom:1.5rem;
+}
 }
 
 
@@ -483,7 +506,7 @@ footer{
   justify-content:space-between;
   padding:1rem 1.5rem 4rem 1.5rem;
   border-top:2px solid lightgrey;
-  background-color:hsl(180, 10%, 99%)
+  background-color:hsl(180, 10%, 99%);
 }
 
 footer li{
@@ -503,5 +526,19 @@ footer li a:active{
 }
 
 @media only screen and (max-width:745px){
+
+  footer{
+  border-top:0px;
+  padding:0rem;
+  }
+
+footer div p{
+  display:block;
+  padding:1rem;
+}
+
+footer div ul li{
+  display:none;
+}
 
 }
