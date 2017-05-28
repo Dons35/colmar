@@ -1,10 +1,8 @@
 body,html{
   margin:0;
   padding:0;
-}
-
-body{
   font-family:helvetica, sans-serif;
+  font-size:16px;
 }
 
 p{
@@ -332,11 +330,7 @@ footer{
   background-color:hsl(180, 10%, 99%)
 }
 
-.footerlinks{
-  font-family:helvetica;
-}
-
-.footerlinks li{
+footer li{
   padding-left:1rem;
 }
 
